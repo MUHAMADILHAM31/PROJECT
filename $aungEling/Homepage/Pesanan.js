@@ -61,7 +61,7 @@ const Pesanan= () => {
   const renderItem = ({ item }) => (
     <View style={styles.pesananContainer}>
       <View style={styles.imageContainer}>
-        <Image source={require('../assets/ggg.jpg')} style={styles.gambarProduk} />
+        <Image source={require('../assets/download.jpg')} style={styles.gambarProduk} />
       </View>
       <View style={styles.infoContainer}>
         <Text style={styles.pesananNama}>{item.nama}</Text>
