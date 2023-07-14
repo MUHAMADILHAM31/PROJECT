@@ -11,7 +11,7 @@ const Cardmenu = ({navigation}) => {
         <View style={styles.container}>
             <View style={styles.card}>
                 <View style={{alignItems:'center'}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>navigation.navigate('package')}>
                         <View style={styles.whitebg}>
                             <FontAwesome5 name="receipt" size={30} color={ijo} />
                         </View>
@@ -29,7 +29,7 @@ const Cardmenu = ({navigation}) => {
                     <Text>Menu</Text>
                 </View>
                 <View style={{alignItems:'center'}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>navigation.navigate('drink')}>
                         <View style={styles.whitebg}>
                             <FontAwesome5 name='mug-hot' size={30} color={ijo}/>
                         </View>

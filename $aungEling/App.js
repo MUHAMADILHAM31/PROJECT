@@ -4,6 +4,9 @@ import Viewstart from './splashscreen/Viewstart';
 import Viewlogin from './LoginScreen/Viewlogin';
 import Homeview from './Homepage/Homeview';
 import Foodmenu from './Foodmenu/Foodmenu';
+import Drinkmenu from './Drinkmenu/Drinkmenu';
+import Package from './Package/Package';
+import Cardmenu from './Homepage/View/Cardmenu';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splashscreen from './splashscreen/splashscreen';
@@ -28,6 +31,7 @@ export default function App() {
         <Stack.Screen name='food' component={Foodmenu} options={{headerShown:false}}/>
         <Stack.Screen name='drink' component={Drinkmenu} options={{headerShown:false}}/>
         <Stack.Screen name='package' component={Package} options={{headerShown:false}}/>
+        <Stack.Screen name='menu' component={Cardmenu} options={{headerShown:false}}/>
       </Stack.Navigator> 
     </NavigationContainer>
   );
